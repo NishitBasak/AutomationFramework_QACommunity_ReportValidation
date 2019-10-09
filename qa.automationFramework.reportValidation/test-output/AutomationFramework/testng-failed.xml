@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationFramework]">
+  <listeners>
+    <listener class-name="qa.reportValidation.helper.reporting.AventExtentReport_Listeners"/>
+    <listener class-name="qa.reportValidation.helper.listener.Itestlistener"/>
+  </listeners>
+  <test thread-count="5" name="Base Class(failed)">
+    <classes>
+      <class name="qa.reportValidation.testScript.web.BaseClass">
+        <methods>
+          <include name="function3"/>
+          <include name="setProperty"/>
+          <include name="function1"/>
+          <include name="function8"/>
+          <include name="function7"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- qa.reportValidation.testScript.web.BaseClass -->
+    </classes>
+  </test> <!-- Base Class(failed) -->
+</suite> <!-- Failed suite [AutomationFramework] -->

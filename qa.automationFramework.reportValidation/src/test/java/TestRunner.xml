@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Framework">
+	<listeners>
+		<listener class-name="qa.reportValidation.helper.reporting.AventExtentReport_Listeners"></listener>
+		<listener class-name="qa.reportValidation.helper.listener.Itestlistener"></listener>
+	</listeners>
+	<test thread-count="5" name="Base Class">
+		<classes>
+			<class name="qa.reportValidation.testScript.web.BaseClass" />	
+		</classes>
+	</test>
+</suite> 
